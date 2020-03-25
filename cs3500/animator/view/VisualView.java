@@ -8,4 +8,14 @@ public class VisualView extends JFrame implements IView {
   public void runAnimation() {
 
   }
+
+  @Override
+  public double getSpeed() {
+    return 0;
+  }
+
+  @Override
+  public void setSpeed(double newSpeed) {
+
+  }
 }

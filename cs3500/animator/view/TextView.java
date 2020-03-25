@@ -1,6 +1,7 @@
 package cs3500.animator.view;
 
 import cs3500.animator.model.Animator;
+import cs3500.animator.model.ShapeType;
 import javax.swing.JFrame;
 
 public class TextView extends JFrame implements IView {
@@ -23,4 +24,15 @@ public class TextView extends JFrame implements IView {
   public double getSpeed() {
     return speed;
   }
+
+  @Override
+  public void setSpeed(double newSpeed) {
+    this.speed = newSpeed;
+  }
+
+  private String getShapeTypeString(ShapeType type) {
+    return type.toString();
+  }
+
+
 }
